@@ -1,28 +1,16 @@
 <div class="container">
-  <div class="row">
-    <app-header></app-header>
-  </div>
-  <div class="row">
-    <h2>Shopping list</h2>
-    <div class="col-4">
-      <app-shopping-list></app-shopping-list>
+    <div class="row text-center">
+        <app-header></app-header>
     </div>
-    <div class="col-4">
-      <app-shopping-list-edit></app-shopping-list-edit>
+    <hr />
+    <div class="row">
+        <div class="col">
+            <app-shopping-list></app-shopping-list>
+        </div>
+        <div class="col">
+            <app-recipes></app-recipes>
+        </div>
     </div>
-  </div>
-  <div class="row">
-    <h2>Recipe book</h2>
-    <div class="col-4">
-      <app-recipe-list></app-recipe-list>
-    </div>
-    <div class="col-4">
-      <app-recipe-details></app-recipe-details>
-    </div>
-    <div class="col-4">
-      <app-recipe-item></app-recipe-item>
-    </div>
-  </div>
 </div>
 
 <router-outlet></router-outlet>
