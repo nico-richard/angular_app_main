@@ -1,2 +1,9 @@
-<h4>{{ recipe.title }}</h4>
-<p>{{ recipe.content }}</p>
+<main>
+    <section>
+        <a href="#recipe{{ recipe.id }} "
+            ><h4>{{ recipe.name }}</h4></a
+        >
+        <p>{{ recipe.description }}</p>
+    </section>
+    <img [src]="recipe.imagePath" [alt]="recipe.name" />
+</main>

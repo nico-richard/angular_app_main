@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Recipe } from 'src/types';
+import { Recipe } from '../recipe.model';
 
 @Component({
     selector: 'app-recipe-list',
@@ -8,17 +8,23 @@ import { Recipe } from 'src/types';
 })
 export class RecipeListComponent {
     recipes: Recipe[] = [
-        {
-            title: 'Recipe 1',
-            content: 'make recipe 1',
-        },
-        {
-            title: 'Recipe 2',
-            content: 'make recipe 2',
-        },
-        {
-            title: 'Recipe 3',
-            content: 'make recipe 3',
-        },
+        new Recipe(
+            0,
+            'Recipe 1',
+            'make recipe 1',
+            `https://images.freeimages.com/images/large-previews/a4b/chicken-and-ricenoodles-salad-1639713.jpg`
+        ),
+        new Recipe(
+            1,
+            'Recipe 2',
+            'make recipe 2',
+            `https://images.freeimages.com/images/large-previews/58c/pancake-with-bananas-and-syrup-1641696.jpg`
+        ),
+        new Recipe(
+            2,
+            'Recipe 3',
+            'make recipe 3',
+            `https://images.freeimages.com/images/large-previews/49a/vegan-meatballs-with-gravy-gluten-free-recipe1-1639522.jpg`
+        ),
     ];
 }
