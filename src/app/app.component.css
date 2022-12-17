@@ -1,0 +1,10 @@
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+section {
+    width: 40%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ddd;
+    padding: 20px;
+}

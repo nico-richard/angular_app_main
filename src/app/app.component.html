@@ -1,16 +1,13 @@
-<div class="container">
-    <div class="row text-center">
-        <app-header></app-header>
-    </div>
-    <hr />
-    <div class="row">
-        <div class="col">
-            <app-shopping-list></app-shopping-list>
-        </div>
-        <div class="col">
-            <app-recipes></app-recipes>
-        </div>
-    </div>
-</div>
+<header>
+    <app-header></app-header>
+</header>
+<main>
+    <section>
+        <app-shopping-list></app-shopping-list>
+    </section>
+    <section>
+        <app-recipes></app-recipes>
+    </section>
+</main>
 
 <router-outlet></router-outlet>
