@@ -3,4 +3,9 @@
 <app-shopping-edit></app-shopping-edit>
 <main>
     <h3>Shopping list</h3>
+    <ul>
+        <li *ngFor="let ingredient of ingredients">
+            <p>{{ ingredient.name }} : {{ ingredient.amount }}</p>
+        </li>
+    </ul>
 </main>

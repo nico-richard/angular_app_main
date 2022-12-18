@@ -15,6 +15,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 @NgModule({
     declarations: [
         AppComponent,
+        HeaderComponent,
         RecipeDetailsComponent,
         RecipeListComponent,
         ShoppingListComponent,
@@ -22,7 +23,7 @@ import { RecipesComponent } from './recipes/recipes.component';
         RecipeItemComponent,
         RecipesComponent,
     ],
-    imports: [BrowserModule, AppRoutingModule, HeaderComponent],
+    imports: [BrowserModule, AppRoutingModule],
     providers: [],
     bootstrap: [AppComponent],
 })
