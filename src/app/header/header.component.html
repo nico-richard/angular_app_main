@@ -1,15 +1,21 @@
-<main>
+<!-- <main>
     <nav>
         <h2>
             <a href="#home">Website Title</a>
         </h2>
         <div class="options">
-            <a href="#1">Option 1</a>
-            <a href="#2">Option 2</a>
-            <a href="#3">Option 3</a>
+            <a (click)="onSelect('recipes')">Recipes</a>
+            <a (click)="onSelect('shoppingList')">Shopping List</a>
         </div>
     </nav>
     <nav>
         <a href="#about">About</a>
     </nav>
-</main>
+</main> -->
+<nav>
+    <ul>
+        <li><a (click)="onSelect('home')">Angular</a></li>
+        <li><a (click)="onSelect('recipes')">Recipes</a></li>
+        <li><a (click)="onSelect('shoppingList')">Shopping List</a></li>
+    </ul>
+</nav>

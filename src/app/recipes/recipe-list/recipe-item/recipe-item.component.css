@@ -4,8 +4,9 @@ main {
     margin: 10px 0;
     padding: 10px 0;
     border: 1px solid #bbb;
-    background-color: #eee;
+    background-color: #4a4e69;
     border-radius: 5px;
+    color: #f2e9e4;
 }
 
 img {
@@ -17,7 +18,7 @@ img {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #f2e9e4;
 }
 
 a:hover {

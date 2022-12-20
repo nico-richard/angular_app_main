@@ -1,6 +1,25 @@
 main {
-    box-shadow: 0 0 10px #ddd;
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 50px;
     margin: 10px 0;
+}
+
+h3 {
+    position: relative;
+    left: -50px;
+    display: inline;
+    border: 2px solid #4a4e69;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.list-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+app-recipe-item {
+    width: 300px;
+    margin-top: 20px;
 }

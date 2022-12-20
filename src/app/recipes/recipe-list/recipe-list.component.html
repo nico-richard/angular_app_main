@@ -1,9 +1,11 @@
 <main>
     <h3>Recipe list</h3>
-    <app-recipe-item
-        *ngFor="let recipe of recipes"
-        [recipe]="recipe"
-    ></app-recipe-item>
+    <div class="list-items">
+        <app-recipe-item
+            *ngFor="let recipe of recipes"
+            [recipe]="recipe"
+        ></app-recipe-item>
+    </div>
 </main>
 
 <!-- <table class="table">
