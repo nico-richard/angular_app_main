@@ -7,6 +7,11 @@ main {
     background-color: #4a4e69;
     border-radius: 5px;
     color: #f2e9e4;
+    cursor: pointer;
+}
+
+main:hover {
+    background-color: #22223b;
 }
 
 img {

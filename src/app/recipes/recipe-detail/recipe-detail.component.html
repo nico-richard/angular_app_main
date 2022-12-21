@@ -1,3 +1,12 @@
 <main>
     <h3>Recipe details</h3>
+    <button (click)="onDetailsClose()">Close</button>
+    <div *ngIf="recipe; else infoText">
+        <p>
+            Details of recipe : <strong> {{ recipe.name }}</strong>
+        </p>
+        <p>{{ recipe.description }}</p>
+        <img [src]="recipe.imagePath" alt="recipe.name" />
+    </div>
+    <ng-template #infoText><h4>No recipe selected</h4></ng-template>
 </main>

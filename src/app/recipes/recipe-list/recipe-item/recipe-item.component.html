@@ -1,8 +1,6 @@
-<main>
+<main (click)="onDetails()">
     <section>
-        <a href="#recipe{{ recipe.id }} "
-            ><h4>{{ recipe.name }}</h4></a
-        >
+        <h4>{{ recipe.name }}</h4>
         <p>{{ recipe.description }}</p>
     </section>
     <img [src]="recipe.imagePath" [alt]="recipe.name" />

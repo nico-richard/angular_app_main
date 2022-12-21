@@ -5,7 +5,7 @@ main {
 section {
     width: 60%;
     border-radius: 5px;
-    box-shadow: 0 0 5px #9a8c98;
+    box-shadow: 0 0 3px 3px #c9ada7;
     padding: 20px;
     background-color: #c9ada7;
 }

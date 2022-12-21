@@ -10,3 +10,10 @@ h3 {
     border-radius: 5px;
     padding: 5px 15px;
 }
+
+img {
+    object-fit: cover;
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+}

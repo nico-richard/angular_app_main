@@ -6,7 +6,8 @@ form {
     align-items: center;
 }
 
-input {
+input,
+button {
     border-radius: 5px;
     width: 40%;
     outline: none;
@@ -16,6 +17,6 @@ input {
     background-color: #f2e9e4;
 }
 
-input[type="submit"] {
+button {
     margin-top: 10px;
 }

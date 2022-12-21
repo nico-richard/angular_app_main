@@ -4,6 +4,7 @@
         <app-recipe-item
             *ngFor="let recipe of recipes"
             [recipe]="recipe"
+            (getDetails)="onGetDetails(recipe)"
         ></app-recipe-item>
     </div>
 </main>
