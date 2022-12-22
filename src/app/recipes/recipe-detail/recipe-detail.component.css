@@ -17,3 +17,7 @@ img {
     height: auto;
     border-radius: 5px;
 }
+
+.recipe-details {
+    display: flex;
+}
