@@ -1,5 +1,13 @@
 main {
     padding: 10px;
+    display: flex;
+}
+
+app-recipe-list {
+    /* min-width: 30%;
+    max-width: 30%; */
+    /* width: 30%; */
+    flex-basis: 30%;
 }
 
 h2 {

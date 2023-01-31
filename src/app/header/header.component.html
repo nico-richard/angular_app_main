@@ -1,7 +1,9 @@
 <ul>
-    <li class="website-title"><a (click)="onSelect('home')">Angular</a></li>
-    <li><a (click)="onSelect('recipes')">Recipes</a></li>
-    <li><a (click)="onSelect('shoppingList')">Shopping List</a></li>
+    <li class="website-title" routerLink="/"><a>The Recipe Book</a></li>
+    <li routerLinkActive="active" [routerLink]="['recipes']"><a>Recipes</a></li>
+    <li routerLinkActive="active" [routerLink]="['shopping-list']">
+        <a>Shopping List</a>
+    </li>
     <li class="dropdown" appDropDown>
         <a class="dropdown-button">Dropdown</a>
         <div class="dropdown-content">

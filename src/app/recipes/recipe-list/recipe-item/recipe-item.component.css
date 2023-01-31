@@ -2,12 +2,16 @@ main {
     display: flex;
     justify-content: space-around;
     margin: 10px 0;
-    padding: 10px 0;
+    padding: 10px;
     border: 1px solid #bbb;
     background-color: #4a4e69;
     border-radius: 5px;
     color: #f2e9e4;
     cursor: pointer;
+}
+
+main.active {
+    background-color: #2a2c3a;
 }
 
 main:hover {

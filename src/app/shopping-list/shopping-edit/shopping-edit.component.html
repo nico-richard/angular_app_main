@@ -1,7 +1,19 @@
-<form>
+<form (ngSubmit)="onSubmit(f)" #f="ngForm">
+    <h3>New ingredient</h3>
     <label for="name">Name</label>
-    <input type="text" id="name" #nameInput />
+    <input type="text" id="name" name="name" ngModel required />
     <label for="amount">Amout</label>
-    <input type="number" id="amount" #amountInput />
-    <button type="submit" (click)="onAddItem()">Add</button>
+    <input
+        type="number"
+        id="amount"
+        name="amount"
+        ngModel
+        required
+        pattern="^[1-9]+[0-9]*$"
+    />
+    <button type="submit" [disabled]="!f.valid">
+        {{ editMode ? "Update" : "Add" }}
+    </button>
+    <button type="button" (click)="onClear()">Clear</button>
+    <button type="button" (click)="onDelete()" *ngIf="editMode">Delete</button>
 </form>

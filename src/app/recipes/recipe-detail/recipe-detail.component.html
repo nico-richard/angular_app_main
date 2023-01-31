@@ -1,16 +1,23 @@
 <main>
     <h3>Recipe details</h3>
-    <button (click)="onDetailsClose()">Close</button>
-    <button (click)="addToShoppingList(recipeSelected.ingredients)">
-        Add to List
-    </button>
+    <div class="dropdown" appDropDown *ngIf="recipeSelected">
+        <a class="dropdown-button">Options</a>
+        <div class="dropdown-content">
+            <button (click)="onDetailsClose()">Close</button>
+            <button (click)="onDeleteRecipe()">Delete</button>
+            <button (click)="addToShoppingList(recipeSelected.ingredients)">
+                Add to List
+            </button>
+            <button [routerLink]="['edit']">Edit</button>
+        </div>
+    </div>
     <div *ngIf="recipeSelected; else infoText">
         <p>
             Details of recipe : <strong> {{ recipeSelected.name }}</strong>
         </p>
         <p>{{ recipeSelected.description }}</p>
         <div class="recipe-details">
-            <img [src]="recipeSelected.imagePath" alt="recipe.name" />
+            <img [src]="recipeSelected.imgPath" alt="recipe.name" />
             <ul>
                 <li *ngFor="let ingredient of recipeSelected.ingredients">
                     {{ ingredient.name }} : {{ ingredient.amount }}

@@ -11,6 +11,7 @@ import {
     selector: '[appDropDown]',
 })
 export class DropDownDirective implements OnInit {
+    deletionTask: NodeJS.Timeout;
     constructor(private elementRef: ElementRef, private renderer: Renderer2) {}
 
     ngOnInit(): void {
@@ -22,6 +23,7 @@ export class DropDownDirective implements OnInit {
     }
 
     @HostListener('mouseenter') mouseEnter(event: Event) {
+        clearTimeout(this.deletionTask);
         this.renderer.setStyle(
             this.elementRef.nativeElement.children[1],
             'display',
@@ -29,10 +31,12 @@ export class DropDownDirective implements OnInit {
         );
     }
     @HostListener('mouseleave') mouseLeave(event: Event) {
-        this.renderer.setStyle(
-            this.elementRef.nativeElement.children[1],
-            'display',
-            'none'
-        );
+        this.deletionTask = setTimeout(() => {
+            this.renderer.setStyle(
+                this.elementRef.nativeElement.children[1],
+                'display',
+                'none'
+            );
+        }, 500);
     }
 }

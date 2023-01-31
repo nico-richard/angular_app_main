@@ -3,13 +3,8 @@ main {
     justify-content: space-evenly;
 }
 section {
-    width: 60%;
+    width: 90%;
     border-radius: 5px;
-    box-shadow: 0 0 3px 3px #c9ada7;
     padding: 20px;
-    background-color: #c9ada7;
-}
-
-h1 {
-    text-align: center;
+    background-color: #eee;
 }

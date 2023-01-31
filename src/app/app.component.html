@@ -1,16 +1,8 @@
 <header>
-    <app-header (componentSelected)="onNavigate($event)"></app-header>
+    <app-header></app-header>
 </header>
 <main>
-    <section *ngIf="componentToDisplay === 'shoppingList'">
-        <app-shopping-list></app-shopping-list>
-    </section>
-    <section *ngIf="componentToDisplay === 'recipes'">
-        <app-recipes></app-recipes>
-    </section>
-    <section *ngIf="componentToDisplay === 'home'">
-        <h1>Home Page</h1>
+    <section>
+        <router-outlet></router-outlet>
     </section>
 </main>
-
-<router-outlet></router-outlet>

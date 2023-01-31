@@ -1,9 +1,11 @@
 <main>
     <h3>Recipe list</h3>
+    <button [routerLink]="['new']">New recipe</button>
     <div class="list-items">
         <app-recipe-item
-            *ngFor="let recipe of recipes"
+            *ngFor="let recipe of recipes; let i = index"
             [recipe]="recipe"
+            [index]="i"
         ></app-recipe-item>
     </div>
 </main>

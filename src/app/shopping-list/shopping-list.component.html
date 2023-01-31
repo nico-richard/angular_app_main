@@ -1,10 +1,16 @@
 <h2>Shopping List</h2>
-<app-shopping-edit></app-shopping-edit>
+<hr />
 <main>
-    <h3>Shopping list</h3>
-    <div class="list">
-        <div class="list-item" *ngFor="let ingredient of ingredients">
-            <p>{{ ingredient.name }} : {{ ingredient.amount }}</p>
-        </div>
+    <app-shopping-edit></app-shopping-edit>
+    <div class="shopping-list">
+        <h3>Shopping list</h3>
+        <ul>
+            <li
+                *ngFor="let ingredient of ingredients; let i = index"
+                (click)="onEditItem(i)"
+            >
+                <p>{{ ingredient.name }} : {{ ingredient.amount }}</p>
+            </li>
+        </ul>
     </div>
 </main>

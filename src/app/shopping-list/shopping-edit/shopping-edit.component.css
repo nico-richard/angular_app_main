@@ -12,11 +12,12 @@ button {
     width: 40%;
     outline: none;
     border: none;
-    box-shadow: inset 0 0 5px #ddd;
     padding: 5px;
-    background-color: #f2e9e4;
+    background-color: white;
+    box-shadow: inset 0 0 2px #555;
 }
 
 button {
     margin-top: 10px;
+    box-shadow: 0 0 5px #555;
 }

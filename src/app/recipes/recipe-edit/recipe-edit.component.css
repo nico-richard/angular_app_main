@@ -1,0 +1,15 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 100%;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
